@@ -1,0 +1,1 @@
+vtnc deu certo mesmo ::¹
