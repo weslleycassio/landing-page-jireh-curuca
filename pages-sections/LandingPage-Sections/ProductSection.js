@@ -6,6 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Chat from "@material-ui/icons/Chat";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
@@ -21,13 +23,9 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Conheça o Curuça</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          O Residencial Curuça é um condomínio localizado em Mauá, São Paulo, com excelente infraestrutura, segurança 24 horas e área de lazer completa. Os apartamentos são espaçosos, bem iluminados e com ambientes bem distribuídos. O condomínio também oferece facilidades como estacionamento e acesso fácil às principais vias da cidade. Venha conhecer o Residencial Curuça e viver com conforto e segurança!
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,7 +33,7 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
+              title="Ótima Localização"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={Chat}
               iconColor="info"
@@ -44,7 +42,7 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
+              title="Segurança"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={VerifiedUser}
               iconColor="success"
@@ -53,10 +51,10 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
+              title="Lazer"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={Fingerprint}
-              iconColor="danger"
+              iconColor="warning"
               vertical
             />
           </GridItem>

@@ -19,54 +19,76 @@ export default function SectionCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: true
   };
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <Card carousel>
+            <Card carousel sx={{ width: "%", height: "100%" }}>
               <Carousel {...settings}>
                 <div>
                   <img
-                    src="/img/bg.jpg"
-                    alt="First slide"
+                    src="/img/bg.png"
                     className="slick-image"
                   />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      Banheiro
                     </h4>
                   </div>
                 </div>
                 <div>
                   <img
                     src="/img/bg2.jpg"
+                    className="slick-image"
+                  />
+                  <div className="slick-caption">
+                    <h4>
+                      <LocationOn className="slick-icons" />
+                      Cozinha
+                    </h4>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="/img/bg3.png"
+                    className="slick-image"
+                  />
+                  <div className="slick-caption">
+                    <h4>
+                      <LocationOn className="slick-icons" />
+                      Quarto do casal
+                    </h4>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="/img/bg4.png"
+                    className="slick-image"
+                  />
+                  <div className="slick-caption">
+                    <h4>
+                      <LocationOn className="slick-icons" />
+                      Quarto Individual
+                    </h4>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="/img/bg5.png"
                     alt="Second slide"
                     className="slick-image"
                   />
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
-                    </h4>
-                  </div>
-                </div>
-                <div>
-                  <img
-                    src="/img/bg3.jpg"
-                    alt="Third slide"
-                    className="slick-image"
-                  />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
+                      Sala de Estar
                     </h4>
                   </div>
                 </div>

@@ -1,6 +1,7 @@
 import {
   primaryColor,
   dangerColor,
+  warningColor,
   successColor,
   defaultFont
 } from "/styles/jss/nextjs-material-kit.js";
@@ -17,7 +18,7 @@ const customInputStyle = {
       borderWidth: "1px !important"
     },
     "&:after": {
-      borderColor: primaryColor
+      borderColor: warningColor
     }
   },
   underlineError: {
@@ -40,7 +41,7 @@ const customInputStyle = {
   },
   labelRoot: {
     ...defaultFont,
-    color: "#AAAAAA !important",
+    color: "warning !important",
     fontWeight: "400",
     fontSize: "14px",
     lineHeight: "1.42857",

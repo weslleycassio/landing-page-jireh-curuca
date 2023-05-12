@@ -21,6 +21,9 @@ import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
+import SectionCarousel from "/pages-sections/Components-Sections/SectionCarousel.js";
+
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const dashboardRoutes = [];
 
@@ -31,10 +34,10 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
+      < Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NextJS Material Kit"
+        brand="Jireh Imóveis"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -47,23 +50,20 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>O Endereço que você sempre quis</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                Seu novo lar na região mais prestigiada da cidade.
               </h4>
               <br />
               <Button
-                color="danger"
+                color="warning"
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-play" />
-                Watch video
+                Conheça
               </Button>
             </GridItem>
           </GridContainer>
@@ -72,7 +72,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
+          <SectionCarousel />
           <WorkSection />
         </div>
       </div>
