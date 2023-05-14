@@ -44,6 +44,15 @@ export default function WorkSection() {
                   }}
                 />
               </GridItem>
+              <GridItem xs={12} sm={12} md={6}>
+                <CustomInput
+                  labelText="Telefone"
+                  id="tel"
+                  formControlProps={{
+                    fullWidth: true
+                  }}
+                />
+              </GridItem>
               <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
                 <Button color="warning">Quero Saber Tudo !</Button>
               </GridItem>

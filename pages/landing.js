@@ -14,6 +14,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
+import Icon from "@material-ui/core/Icon";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
@@ -22,6 +23,7 @@ import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.
 import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionCarousel from "/pages-sections/Components-Sections/SectionCarousel.js";
+
 
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
@@ -65,6 +67,22 @@ export default function LandingPage(props) {
                 <i className="fas fa-play" />
                 Conheça
               </Button>
+              <GridItem xs={12} sm={2} className={classes.marginLeft}>
+                <Button
+                color="warning"
+                size="lg">
+
+              <h4>WhatsApp</h4>
+              <img
+                src="img/faces/wpp.png" 
+                alt="wpp"
+                width={50}
+                height={50}
+                
+                className={classes.imgRoundedCircle + " " + classes.imgFluid}
+                />
+                </Button>
+            </GridItem>
             </GridItem>
           </GridContainer>
         </div>
