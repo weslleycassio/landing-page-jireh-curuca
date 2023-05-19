@@ -29,7 +29,7 @@ export default function SectionCarousel() {
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <Card carousel sx={{ width: "%", height: "100%" }}>
+            <Card carousel sx={{ width: "100%", height: "100%" }}>
               <Carousel {...settings}>
                 <div>
                   <img
@@ -74,7 +74,7 @@ export default function SectionCarousel() {
                   />
                   <div className="slick-caption">
                     <h4>
-                      <LocationOn className="slick-icons" />
+                      <LocationOn className="slick-icons" />          
                       Quarto Individual
                     </h4>
                   </div>
@@ -95,7 +95,7 @@ export default function SectionCarousel() {
               </Carousel>
             </Card>
           </GridItem>
-        </GridContainer>
+        </GridContainer>                                                                                                                                                        
       </div>
     </div>
   );

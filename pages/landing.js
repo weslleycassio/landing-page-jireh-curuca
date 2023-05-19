@@ -23,6 +23,7 @@ import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.
 import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionCarousel from "/pages-sections/Components-Sections/SectionCarousel.js";
+import { Typography } from "@material-ui/core";
 
 
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -39,12 +40,13 @@ export default function LandingPage(props) {
       < Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Jireh Imóveis"
+        // brand="Jireh"
+        image="/img/jirehlogo.png"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "white"
+          color: "warning"
         }}
         {...rest}
       />
@@ -57,7 +59,7 @@ export default function LandingPage(props) {
                 Seu novo lar na região mais prestigiada da cidade.
               </h4>
               <br />
-              <Button
+              {/* <Button
                 color="warning"
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
@@ -66,7 +68,7 @@ export default function LandingPage(props) {
               >
                 <i className="fas fa-play" />
                 Conheça
-              </Button>
+              </Button> */}
               <GridItem xs={12} sm={2} className={classes.marginLeft}>
                 <Button
                 color="warning"
@@ -92,6 +94,7 @@ export default function LandingPage(props) {
           <ProductSection />
           <SectionCarousel />
           <WorkSection />
+         
         </div>
       </div>
       <Footer />
