@@ -32,6 +32,14 @@ export default function ProductSection() {
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
+          <img
+                src="img/faces/map.png" 
+                alt="caixa"
+                width={50}
+                height={50}
+                
+                className={classes.imgRoundedCircle + " " + classes.imgFluid}
+                />
             <InfoArea
               title="Ótima Localização"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
@@ -41,6 +49,14 @@ export default function ProductSection() {
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
+          <img
+                src="img/faces/security.png" 
+                alt="caixa"
+                width={50}
+                height={50}
+                
+                className={classes.imgRoundedCircle + " " + classes.imgFluid}
+                />
             <InfoArea
               title="Segurança"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."

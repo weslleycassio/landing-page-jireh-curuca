@@ -23,9 +23,7 @@ export default function InfoArea(props) {
   });
   return (
     <div className={classes.infoArea}>
-      <div className={iconWrapper}>
-        <props.icon className={iconClasses} />
-      </div>
+      
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
         <p className={classes.description}>{description}</p>
