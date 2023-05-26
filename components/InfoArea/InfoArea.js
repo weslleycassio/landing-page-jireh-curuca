@@ -19,7 +19,6 @@ export default function InfoArea(props) {
     [classes.iconWrapperVertical]: vertical
   });
   const iconClasses = classNames({
-    [classes.icon]: true,
     [classes.iconVertical]: vertical
   });
   return (

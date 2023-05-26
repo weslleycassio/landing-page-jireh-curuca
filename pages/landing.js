@@ -15,6 +15,8 @@ import Button from "/components/CustomButtons/Button.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
 import Icon from "@material-ui/core/Icon";
+import { useRef } from 'react';
+
 
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
@@ -32,11 +34,26 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
+const scrollToSection = (ref) => {
+  window.scrollTo({
+    top: ref.current.offsetTop,
+    behavior: 'smooth'
+  });
+};
+
+const MyComponent = () => {
+  const sectionRef = useRef(null);
+   }
+
+  const handleClick = () => {
+    scrollToSection(sectionRef);
+  };
+
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
+    <div id='Inicio'>
       < Header
         color="transparent"
         routes={dashboardRoutes}
@@ -50,8 +67,8 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter responsive image="/img/landing-bg.jpg">
-        <div className={classes.container}>
+      <Parallax  filter responsive image="/img/landing-bg.jpg">
+        <div  className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>O Endereço que você sempre quis</h1>
@@ -72,6 +89,7 @@ export default function LandingPage(props) {
               <GridItem xs={12} sm={2} className={classes.marginLeft}>
                 <Button
                 color="warning"
+                href="https://wa.me/5511996430891"
                 size="lg">
 
               <h4>WhatsApp</h4>
@@ -88,16 +106,31 @@ export default function LandingPage(props) {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
+      </Parallax >
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
+        <div id='Curuca' className={classes.container}>
           <ProductSection />
-          <SectionCarousel />
-          <WorkSection />
-         
+          <div id='Fotos'>
+          <SectionCarousel/>
+          </div>
+          <div id='Localizacao' style={{position: 'relative',marginLeft: '30%'}}> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d363.54160927315456!2d-46.44864448413127!3d-23.66524516730975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1685062902438!5m2!1spt-BR!2sus" 
+                  width="400" 
+                  height="300" 
+                  style={{border:0}} 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div>
+          </div>
+          <WorkSection/>
         </div>
       </div>
-      <Footer />
+      <div id='Contato'>
+      <  Footer />
+
+      </div>
     </div>
   );
 }

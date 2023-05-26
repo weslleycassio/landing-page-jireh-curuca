@@ -50,13 +50,21 @@ export default function ProductSection() {
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
+            <img
+                src="img/faces/caixa.png" 
+                alt="caixa"
+                width={50}
+                height={50}
+                
+                className={classes.imgRoundedCircle + " " + classes.imgFluid}
+                />
             <InfoArea
-              title="Lazer"
+              title="Facilidades com a Caixa Econômica"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={Fingerprint}
-              iconColor="warning"
               vertical
             />
+            
           </GridItem>
         </GridContainer>
       </div>

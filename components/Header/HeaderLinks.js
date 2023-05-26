@@ -1,6 +1,8 @@
 /*eslint-disable*/
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
+import { useRef } from 'react';
+import { useState } from 'react';
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -21,15 +23,22 @@ import styles from "/styles/jss/nextjs-material-kit/components/headerLinksStyle.
 
 const useStyles = makeStyles(styles);
 
+
+
+
+
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
-    <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+    <>
+
+    <List   className={classes.list}>
+      <ListItem   className={classes.listItem}>
+
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          
+          href="#Inicio"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           <Icon className={classes.icons}>homeicon</Icon> Início
@@ -37,46 +46,42 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          href="#Curuca"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
-        >
+          >
           <Icon className={classes.icons}>apartment</Icon> Conheça o Curuça
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          href="#Fotos"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
-        >
+          >
           <Icon className={classes.icons}>linked_camera</Icon> Fotos
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+          href="#Localizacao"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
-        >
+          >
           <Icon className={classes.icons}>location_on</Icon> Localização
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmk-navbar"
+        <Button 
+          href="#Contato"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
-        >
+          >
           <Icon className={classes.icons}>chat</Icon> Fale Conosco
         </Button>
       </ListItem>
-      
-      
     </List>
+          </>
+    
   );
 }
