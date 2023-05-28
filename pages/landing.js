@@ -18,6 +18,7 @@ import Icon from "@material-ui/core/Icon";
 import { useRef } from 'react';
 
 
+
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
@@ -25,7 +26,7 @@ import ProductSection from "/pages-sections/LandingPage-Sections/ProductSection.
 import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionCarousel from "/pages-sections/Components-Sections/SectionCarousel.js";
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -113,7 +114,20 @@ export default function LandingPage(props) {
           <div id='Fotos'>
           <SectionCarousel/>
           </div>
-          <div id='Localizacao' style={{position: 'relative',marginLeft: '30%'}}> 
+          <GridContainer justify="center" >
+
+        <GridItem justify="center" style={{color:'#3C4858'}} xs={12} sm={12} md={8} >
+          <h2 className={classes.title} style={{color:'#3C4858'}}>Localização</h2>
+          <h5 className={classes.description}>
+          O Residencial Curuça oferece uma localização privilegiada em uma área nobre de Mauá, com uma rua sem saída, ambiente silencioso e calmo. Sua proximidade com o centro da cidade, hospitais e áreas de lazer torna-o uma escolha atrativa para quem procura conforto, conveniência e qualidade de vida.
+          </h5>
+        </GridItem>
+          </GridContainer>
+          <GridContainer justify="center"> 
+
+          <Grid xs={12} sm={12} md={4}>
+
+          <div   id='Localizacao' > 
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d363.54160927315456!2d-46.44864448413127!3d-23.66524516730975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1685062902438!5m2!1spt-BR!2sus" 
                   width="400" 
                   height="300" 
@@ -122,11 +136,43 @@ export default function LandingPage(props) {
                   loading="lazy" 
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+                  </Grid>
+                  </GridContainer>
+                  <GridContainer justify="center" >
+
+<GridItem justify="center" style={{color:'#3C4858'}} xs={12} sm={12} md={8} >
+  <h2 className={classes.title} style={{color:'#3C4858'}}>Plantas</h2>
+  <h5 className={classes.description}>
+  O Residencial Curuça oferece uma variedade de apartamentos, com seis unidades por andar e dois elevadores. São disponibilizados cinco tipos de apartamentos, com tamanhos que variam de 53m² a 139m². As plantas foram projetadas para proporcionar conforto e praticidade aos moradores, atendendo às diferentes necessidades e preferências.
+  </h5>
+</GridItem>
+  </GridContainer>
+  <GridContainer justify="center"> 
+
+  <Grid xs={12} sm={12} md={4}>
+
+  <div   id='Localizacao' > 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d363.54160927315456!2d-46.44864448413127!3d-23.66524516730975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1685062902438!5m2!1spt-BR!2sus" 
+          width="400" 
+          height="300" 
+          style={{border:0}} 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+          </Grid>
+          </GridContainer>
+          <div>
+            
+          </div>
+                  
           <div>
           </div>
           <WorkSection/>
         </div>
+        
       </div>
+      
       <div id='Contato'>
       <  Footer />
 

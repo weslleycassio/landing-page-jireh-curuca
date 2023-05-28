@@ -72,6 +72,15 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Button
+          href="#Plantas"
+          color="transparent"
+          className={classes.navLink}
+          >
+          <Icon className={classes.icons}>map</Icon> Plantas
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Button 
           href="#Contato"
           color="transparent"
