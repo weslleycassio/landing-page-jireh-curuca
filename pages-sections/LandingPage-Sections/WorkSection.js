@@ -24,7 +24,9 @@ export default function WorkSection() {
           <h4 className={classes.description}>
             Saiba como realizar o sonho de morar em um apartamento novo com toda a qualidade de vida que você deseja no centro de Mauá
           </h4>
-          <form>
+          <form action="https://formsubmit.co/emailteste@email.com" method="POST"/>
+          <input type="hidden" name="_cc" value="another@email.com"/>
+          <input type="hidden" name="_next" value=""/>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
