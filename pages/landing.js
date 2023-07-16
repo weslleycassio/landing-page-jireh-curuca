@@ -27,6 +27,7 @@ import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
 import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
 import SectionCarousel from "/pages-sections/Components-Sections/SectionCarousel.js";
 import { Grid, Typography } from "@material-ui/core";
+import PlantasCarousel from "../pages-sections/Components-Sections/PlantsCarrousel";
 
 
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -68,7 +69,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax  filter responsive image="/img/landing-bg.jpg">
+      <Parallax  filter responsive image="/img/landing-bg.jpg" >
         <div  className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -119,7 +120,7 @@ export default function LandingPage(props) {
         <GridItem justify="center" style={{color:'#3C4858'}} xs={12} sm={12} md={8} >
           <h2 className={classes.title} style={{color:'#3C4858'}}>Localização</h2>
           <h5 className={classes.description}>
-          O Residencial Curuça oferece uma localização privilegiada em uma área nobre de Mauá, com uma rua sem saída, ambiente silencioso e calmo. Sua proximidade com o centro da cidade, hospitais e áreas de lazer torna-o uma escolha atrativa para quem procura conforto, conveniência e qualidade de vida.
+          Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuça são perfeitos para você e sua família, com Suíte e Sacada Grill. Não perca essa oportunidade!
           </h5>
         </GridItem>
           </GridContainer>
@@ -150,24 +151,15 @@ export default function LandingPage(props) {
   <GridContainer justify="center"> 
 
   <Grid xs={12} sm={12} md={4}>
-
-  <div   id='Localizacao' > 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d363.54160927315456!2d-46.44864448413127!3d-23.66524516730975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1685062902438!5m2!1spt-BR!2sus" 
-          width="400" 
-          height="300" 
-          style={{border:0}} 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
           </Grid>
           </GridContainer>
           <div>
-            
+          <PlantasCarousel>
+
+          </PlantasCarousel>
           </div>
                   
-          <div>
-          </div>
+          
           <WorkSection/>
         </div>
         

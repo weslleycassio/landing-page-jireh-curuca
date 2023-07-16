@@ -25,7 +25,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Conheça o Curuça</h2>
           <h5 className={classes.description}>
-          O Residencial Curuça é um condomínio localizado em Mauá, São Paulo, com excelente infraestrutura, segurança 24 horas e área de lazer completa. Os apartamentos são espaçosos, bem iluminados e com ambientes bem distribuídos. O condomínio também oferece facilidades como estacionamento e acesso fácil às principais vias da cidade. Venha conhecer o Residencial Curuça e viver com conforto e segurança!
+          Venha morar na Vila Guarani em Mauá! Os apartamentos do Residencial Curuça são perfeitos para você e sua família, com Suíte e Sacada Grill. Não perca essa oportunidade!
           </h5>
         </GridItem>
       </GridContainer>
@@ -42,7 +42,7 @@ export default function ProductSection() {
                 />
             <InfoArea
               title="Ótima Localização"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Desfrute de uma ótima localização e venha conhecer esse empreendimento que une conforto, modernidade e conveniência."
               icon={Chat}
               iconColor="info"
               vertical
@@ -50,7 +50,7 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
           <img
-                src="img/faces/security.png" 
+                src="img/faces/apartmentDF.png" 
                 alt="caixa"
                 width={50}
                 height={50}
@@ -58,8 +58,8 @@ export default function ProductSection() {
                 className={classes.imgRoundedCircle + " " + classes.imgFluid}
                 />
             <InfoArea
-              title="Segurança"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Sacada Grill"
+              description="Com Varanda Grill, disponíveis em opções de 2 ou 3 Dormitórios Escolha entre as metragens de 53 m², 66 m², 67 m² e 69 m², todas com ótimos espaços para você aproveitar."
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -76,7 +76,8 @@ export default function ProductSection() {
                 />
             <InfoArea
               title="Facilidades com a Caixa Econômica"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="A entrada é facilitada, tornando o sonho da casa própria ainda mais acessível.
+              Não deixe de conferir os valores e garantir o seu lugar no Residencial Curuça. Saiba mais detalhes e entre em contato conosco para mais informações."
               icon={Fingerprint}
               vertical
             />
