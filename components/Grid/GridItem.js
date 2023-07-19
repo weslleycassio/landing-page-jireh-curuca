@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 const styles = {
   grid: {
     width: "100%",
-    height: "100%",
+    
     paddingRight: "15px",
     paddingLeft: "15px",
     flexBasis: "auto",

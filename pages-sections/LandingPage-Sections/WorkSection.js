@@ -24,7 +24,7 @@ export default function WorkSection() {
           <form action="https://formsubmit.co/weslleycassio18@gmail.com" method="POST">
   <GridContainer>
       <GridContainer >
-    <GridItem xs={12} sm={12} md={5}>
+    <GridItem xs={10} sm={10} md={3}>
       <CustomInput
         labelText="Nome Completo"
         id="name"
@@ -34,17 +34,16 @@ export default function WorkSection() {
                 />
     </GridItem>
     <GridItem 
-    xs={12} sm={12} md={5}>
+    xs={10} sm={3} md={3}>
       <CustomInput
       labelText="E-mail"
       id="email"
       formControlProps={{
-      fullWidth: true
       }}
       />
     </GridItem>
     <GridItem 
-    xs={12} sm={12} md={5}>
+    xs={10} sm={3} md={3}>
       <CustomInput
       labelText="Telefone"
       id="tel"
@@ -53,8 +52,8 @@ export default function WorkSection() {
       }}
       />
     </GridItem>
-    <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-      <Button type="submit" color="warning">
+    <GridItem xs={10} sm={3} md={2} sx={{height: "10%"}} className={classes.textCenter}>
+      <Button type="submit" size="lg" color="warning">
         Quero Saber Tudo!
       </Button>
     </GridItem>
